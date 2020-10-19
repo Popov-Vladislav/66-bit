@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            color:rgb(82, 82, 219);
+            font-size: 50px;
+        }
+        .words{
+            width: 50px;
+        }
+        .fade-in {
+	    -webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate forwards;
+	        animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate forwards;
+        }
+        @-webkit-keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+            }
+            @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="words fade-in"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
